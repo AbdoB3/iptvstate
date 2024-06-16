@@ -1,5 +1,6 @@
 import Navbar from "@/components/NavBar";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "iptvstate",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <main className="app main-content relative ">
           <Navbar/>
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
