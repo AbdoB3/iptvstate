@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
 import { useState } from "react"
+import Hour from "@/public/24-hours.svg"
 
 
 const Navbar = () => {
@@ -26,10 +27,12 @@ const Navbar = () => {
             </ul>
 
             <div className="lg:flexCenter hidden">
+               
                 <Button
                     type="button"
                     title="Free trial"
                     variant="btn_dark_green"
+                    icon= {Hour}
 
                 />
             </div>
@@ -54,11 +57,11 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <Button
-                    type="button"
-                    title="Free trial"
-                    variant="btn_dark_green"
+                            type="button"
+                            title="Free trial"
+                            variant="btn_dark_green"
 
-                />
+                        />
                     </div>
                 </div>
             </div>

@@ -149,7 +149,10 @@ body {
   .bold-16 {
     @apply text-[16px] font-[700];
   }
+
+  
 }
+
 /* .dropdown {
   @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-red-700 min-w-[210px] flex flex-col gap-2 justify-end items-end;
   opacity: 0;
