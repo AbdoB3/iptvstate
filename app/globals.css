@@ -190,3 +190,9 @@ body {
 .main-content {
   padding-top: 80px; /* Adjust based on your navbar height */
 }
+
+.custom-carousel .p-carousel-prev, 
+.custom-carousel .p-carousel-next {
+  display: none !important;
+}
+ 

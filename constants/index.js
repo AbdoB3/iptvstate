@@ -84,4 +84,32 @@ export const NAV_LINKS = [
       '/wordpress.svg',
     ],
   };
+
+  export const CHANNELS = [
+    {
+      img: "/./carousel/1.png",
+      name: "Bein sport",
+    },
+    {
+      img: "/./carousel/2.png",
+      name: "RMC Sport", 
+    },
+    {
+      img: "/./carousel/3.png",
+      name: "Canal plus",
+    },
+    {
+      img: "/./carousel/4.png",
+      name: "Sky sport",
+    },
+    {
+      img: "/./carousel/5.png",
+      name: "Netflix",
+    },
+    {
+      img: "/./carousel/5.png",
+      name: "Netflix",
+    }
+  ];
+  
   
