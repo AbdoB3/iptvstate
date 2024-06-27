@@ -87,28 +87,20 @@ export const NAV_LINKS = [
 
   export const CHANNELS = [
     {
-      img: "/./carousel/1.png",
+      img: "https://res.cloudinary.com/dyzdrbivf/image/upload/v1719484606/1_iqhnll.png",
       name: "Bein sport",
     },
     {
-      img: "/./carousel/2.png",
+      img: "https://res.cloudinary.com/dyzdrbivf/image/upload/v1719484606/2_d7ihd3.png",
       name: "RMC Sport", 
     },
     {
-      img: "/./carousel/3.png",
+      img: "https://res.cloudinary.com/dyzdrbivf/image/upload/v1719484607/3_vwz6xq.png",
       name: "Canal plus",
     },
     {
-      img: "/./carousel/4.png",
+      img: "https://res.cloudinary.com/dyzdrbivf/image/upload/v1719484607/4_xfgue4.png",
       name: "Sky sport",
-    },
-    {
-      img: "/./carousel/5.png",
-      name: "Netflix",
-    },
-    {
-      img: "/./carousel/5.png",
-      name: "Netflix",
     }
   ];
   
