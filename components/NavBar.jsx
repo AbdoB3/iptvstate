@@ -33,6 +33,7 @@ const Navbar = () => {
                     title="Free trial"
                     variant="btn_dark_green"
                     icon= {Hour}
+                    href="https://api.whatsapp.com/send/?phone=447376949419"
 
                 />
             </div>

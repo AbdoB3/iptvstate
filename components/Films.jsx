@@ -26,7 +26,7 @@ const Films = () => {
 
   const itemTemplate = (product) => {
     return (
-      <div className="product-item">
+      <div className="product-item border-y">
         <div className="product-item-content">
         <div className="flex justify-center items-center p-4 box-border hover:opacity-80 transition-opacity duration-300 ease-in-out">
         <Image

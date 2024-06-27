@@ -40,15 +40,16 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-col w-full gap-3 sm:flex-row">
+                <div className="flex items-center flex-col w-full gap-3 sm:flex-row">
                     <Button
                         type="button"
-                        title="Download App"
-                        variant="btn_green"
+                        title="One year only for 49€"
+                        variant="btn_primary"
+                        href="https://api.whatsapp.com/send/?phone=447376949419"
                     />
                     <Button
                         type="button"
-                        title="How we work?"
+                        title="How it works?"
                         icon="/play.svg"
                         variant="btn_white_text"
                     />
@@ -65,7 +66,7 @@ const Hero = () => {
 
 
             </div>
-            
+
         </section>
     )
 }
