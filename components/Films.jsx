@@ -59,7 +59,7 @@ const Films = () => {
         numScroll={1}
         className="custom-carousel"
         circular
-        autoplayInterval={autoplay ? 1000 : 0} 
+        autoplayInterval={autoplay ? 2500 : 0} 
         itemTemplate={itemTemplate} 
         responsiveOptions={responsiveOptions}  
       />
