@@ -185,7 +185,7 @@ export default function Pricing() {
                                 plan.period === "1 Year"
                                     ? 'border-[#EF4D48] bg-[#EF4D48] text-white hover:bg-[#f4514b] hover:ring-1 hover:ring-[#EF4D48]'
                                     : 'border-[#EF4D48] bg-white text-[#EF4D48] hover:ring-1 hover:ring-[#EF4D48]'
-                            } px-12 py-3 text-center text-sm font-medium focus:outline-none focus:ring active:text-indigo-500`}
+                            } px-12 py-3 text-center text-sm font-medium focus:outline-none focus:ring active:text-[#EF4D48]`}
                         >
                             Get Started
                         </a>
