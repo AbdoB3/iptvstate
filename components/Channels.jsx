@@ -25,7 +25,7 @@ const Channels = () => {
     return (
       <div className="product-item">
         <div className="product-item-content">
-          <div className="flex justify-center items-center p-4 box-border">
+          <div className="flex justify-center items-center box-border">
             <Image
               src={product.img}
               alt={product.name}
