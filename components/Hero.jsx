@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import Button from './Button'
 import heroImg from "@/public/Right-hero.jpg"
+import {useTranslations} from 'next-intl';
+
 
 const Hero = () => {
+  const t = useTranslations('HomePage');
+
     return (
         <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
             <div className="hero-map" />
@@ -16,6 +20,8 @@ const Hero = () => {
                     height={40}
                     className="absolute left-[-5px] top-[-45px] w-10 lg:w-[50px]"
                 />
+                <h1 className="bold-52 ">{t('title')}</h1>
+
                 <h1 className="bold-52 lg:bold-64">Experience TV Like Never Before!</h1>
                 <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
                     Experience unlimited entertainment with our IPTV service. Stream live TV, movies, and shows from around the world in 4K quality on any device, anytime, anywhere.
