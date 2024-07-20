@@ -73,5 +73,11 @@ export const getNavLinks = (t) => [
       name: "Sky sport",
     }
   ];
+
+  export const countries = [
+    { name: 'DE', code: 'de', flag: 'https://www.worldometers.info/img/flags/gm-flag.gif' },
+    { name: 'EN', code: 'en', flag: 'https://www.worldometers.info/img/flags/us-flag.gif' },
+    // Add more countries as needed
+];
   
   

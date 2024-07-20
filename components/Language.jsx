@@ -1,69 +1,64 @@
 'use client'
 import { useState, useTransition, useEffect } from "react";
-import { Dropdown } from 'primereact/dropdown';
 import { useRouter } from "next/navigation";
 import { useLocale } from "use-intl";
+import { countries } from "@/constants";
 
 export default function FilterDemo() {
-    const countries = [
-        { name: 'DE', code: 'de', flag: 'https://www.worldometers.info/img/flags/gm-flag.gif' },
-        { name: 'EN', code: 'en', flag: 'https://www.worldometers.info/img/flags/us-flag.gif' },
-        // Add more countries as needed
-    ];
-
     const [selectedCountry, setSelectedCountry] = useState(countries[0]); // Default to "DE"
     const [isPending, startTransition] = useTransition();
+    const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
-    const localActive = useLocale(); 
+    const localActive = useLocale();
 
     useEffect(() => {
         const activeCountry = countries.find(country => country.code === localActive) || countries[0];
         setSelectedCountry(activeCountry);
     }, [localActive]);
 
-    const selectedCountryTemplate = (option, props) => {
-        if (option) {
-            return (
-                <div className="flex items-center">
-                    <img alt={option.name} src={option.flag} className="mr-2" style={{ width: '18px', height: '14px' }} />
-                    <div>{option.name}</div>
-                </div>
-            );
-        }
-
-        return <span>{props.placeholder}</span>;
-    };
-
-    const countryOptionTemplate = (option) => {
-        return (
-            <div className="flex items-center">
-                <img alt={option.name} src={option.flag} className="mr-2" style={{ width: '18px', height: '14px' }} />
-                <div>{option.name}</div>
-            </div>
-        );
-    };
-
-    const handleCountryChange = (e) => {
-        setSelectedCountry(e.value);
-        const nextLocale = e.value.code;
+    const handleCountryChange = (country) => {
+        setSelectedCountry(country);
+        const nextLocale = country.code;
 
         startTransition(() => {
             router.replace(`/${nextLocale}`);
         });
+        setIsOpen(false);
     };
 
     return (
-        <div className="card flex justify-center bg-transparent">
-            <Dropdown
-                value={selectedCountry}
-                onChange={handleCountryChange}
-                options={countries}
-                optionLabel="name"
-                valueTemplate={selectedCountryTemplate}
-                itemTemplate={countryOptionTemplate}
-                className="w-full md:w-14rem"
-                disabled={isPending}
-            />
+        <div className="relative inline-block text-left sm:mr-3">
+            <div>
+                <button
+                    type="button"
+                    className="inline-flex items-center p-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm  focus:outline-none focus:ring-offset-2"
+                    onClick={() => setIsOpen(!isOpen)}
+                    disabled={isPending}
+                >
+                    <img alt={selectedCountry.name} src={selectedCountry.flag} className="mr-2" style={{ width: '18px', height: '14px' }} />
+                    {selectedCountry.name}
+                    <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+
+            {isOpen && (
+                <div className="absolute right-0 z-10 mt-2 w-28 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="p-1">
+                        {countries.map((country) => (
+                            <button
+                                key={country.code}
+                                onClick={() => handleCountryChange(country)}
+                                className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                                <img alt={country.name} src={country.flag} className="mr-2" style={{ width: '18px', height: '14px' }} />
+                                {country.name}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
