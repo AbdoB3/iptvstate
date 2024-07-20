@@ -27,11 +27,11 @@ export default function FilterDemo() {
     };
 
     return (
-        <div className="relative inline-block text-left sm:mr-3">
+        <div className="relative inline-block text-left ">
             <div>
                 <button
                     type="button"
-                    className="inline-flex items-center p-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm  focus:outline-none focus:ring-offset-2"
+                    className="inline-flex items-center sm:-mr-3 mr-3 p-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm  focus:outline-none focus:ring-offset-2"
                     onClick={() => setIsOpen(!isOpen)}
                     disabled={isPending}
                 >
