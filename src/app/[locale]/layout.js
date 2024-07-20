@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-
 export const metadata = {
   title: "iptvstate",
   description: "the best iptv provider",

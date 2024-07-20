@@ -5,7 +5,7 @@ import {useTranslations} from 'next-intl';
 
 
 const Hero = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('Hero');
 
     return (
         <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
@@ -20,11 +20,10 @@ const Hero = () => {
                     height={40}
                     className="absolute left-[-5px] top-[-45px] w-10 lg:w-[50px]"
                 />
-                <h1 className="bold-52 ">{t('title')}</h1>
 
-                <h1 className="bold-52 lg:bold-64">Experience TV Like Never Before!</h1>
+                <h1 className="bold-52 lg:bold-58">{t('title')}</h1>
                 <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-                    Experience unlimited entertainment with our IPTV service. Stream live TV, movies, and shows from around the world in 4K quality on any device, anytime, anywhere.
+                {t('description')}
                 </p>
 
                 <div className="my-11 flex flex-wrap gap-5">
@@ -42,20 +41,20 @@ const Hero = () => {
 
                     <p className="bold-16 lg:bold-20 text-blue-70">
                         8k
-                        <span className="regular-16 lg:regular-20 ml-1">Excellent Reviews</span>
+                        <span className="regular-16 lg:regular-20 ml-1">{t('reviews')}</span>
                     </p>
                 </div>
 
                 <div className="flex items-center flex-col w-full gap-3 sm:flex-row">
                     <Button
                         type="button"
-                        title="One year only for 49€"
+                        title={t('oneYear')}
                         variant="btn_primary"
                         href="https://api.whatsapp.com/send/?phone=447376949419"
                     />
                     <Button
                         type="button"
-                        title="How it works?"
+                        title={t('how')}
                         icon="/play.svg"
                         variant="btn_white_text"
                     />

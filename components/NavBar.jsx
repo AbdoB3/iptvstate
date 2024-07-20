@@ -1,16 +1,22 @@
 "use client"
 
-import { NAV_LINKS } from "@/constants"
+import { getNavLinks } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
 import { useState } from "react"
 import Hour from "@/public/24-hours.svg"
+import { useTranslations } from 'next-intl';
+import Language from "@/components/Language";
+
 
 
 const Navbar = () => {
 
     const [toggleDropdown, setToggleDropdown] = useState(false);
+    const t = useTranslations('Navbar');
+    const NAV_LINKS = getNavLinks(t);
+
 
     return (
         <nav className="sticky-navbar flexBetween max-container padding-container z-30 py-5">
@@ -24,21 +30,25 @@ const Navbar = () => {
                         {link.label}
                     </Link>
                 ))}
+
+                <Language />
             </ul>
 
             <div className="lg:flexCenter hidden">
-               
+
                 <Button
                     type="button"
-                    title="Free trial"
+                    title={t('free trial')}
                     variant="btn_dark_green"
-                    icon= {Hour}
+                    icon={Hour}
                     href="https://api.whatsapp.com/send/?phone=447376949419"
 
                 />
             </div>
             <div className='lg:hidden flex relative'>
                 <div className='flex'>
+                <Language />
+
                     <Image
                         src="/menu.svg"
                         alt="menu"
@@ -57,9 +67,10 @@ const Navbar = () => {
                                 {link.label}
                             </Link>
                         ))}
+
                         <Button
                             type="button"
-                            title="Free trial"
+                            title={t('free trial')}
                             variant="btn_dark_green"
 
                         />

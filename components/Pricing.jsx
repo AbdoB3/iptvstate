@@ -1,22 +1,27 @@
-import { PLANS } from "@/constants/plans"
+import { getPlans } from "@/constants/plans"
+import { useTranslations } from 'next-intl';
+
 
 export default function Pricing() {
+
+    const t = useTranslations('Pricing');
+    const PLANS = getPlans(t);
+
     return (
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:items-center md:gap-8">
                 {PLANS.map((plan, index) => (
                     <div
                         key={index}
-                        className={`rounded-2xl border ${
-                            plan.period === "1 Year"
+                        className={`rounded-2xl border ${plan.period === "1 Year"
                                 ? 'border-[#EF4D48] p-6 shadow-sm ring-1 ring-[#EF4D48] sm:px-8 lg:p-12'
                                 : 'border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12'
-                        }`}
+                            }`}
                     >
                         <div className="text-center">
                             <h2 className="text-lg font-medium text-gray-900">
-                                {plan.period} 
-                            </h2> 
+                                {plan.period}
+                            </h2>
                             {plan.bonus && (
                                 <span className="text-sm font-medium text-gray-700">{plan.bonus}</span>
                             )}
@@ -180,14 +185,13 @@ export default function Pricing() {
                         </ul>
 
                         <a
-                        href="https://api.whatsapp.com/send/?phone=447376949419"
-                        className={`mt-8 block rounded-full border ${
-                                plan.period === "1 Year"
+                            href="https://api.whatsapp.com/send/?phone=447376949419"
+                            className={`mt-8 block rounded-full border ${plan.period === "1 Year" || plan.period == "1 Jahr"
                                     ? 'border-[#EF4D48] bg-[#EF4D48] text-white hover:bg-[#f4514b] hover:ring-1 hover:ring-[#EF4D48]'
                                     : 'border-[#EF4D48] bg-white text-[#EF4D48] hover:ring-1 hover:ring-[#EF4D48]'
-                            } px-12 py-3 text-center text-sm font-medium focus:outline-none focus:ring active:text-[#EF4D48]`}
+                                } px-12 py-3 text-center text-sm font-medium focus:outline-none focus:ring active:text-[#EF4D48]`}
                         >
-                            Get Started
+                            {t('button')}
                         </a>
                     </div>
                 ))}

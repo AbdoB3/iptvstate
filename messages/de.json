@@ -1,5 +1,61 @@
 {
-    "HomePage": {
-      "title": "Hallo Welt!"
+    "Navbar": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "services": "Dienstleistungen",
+        "pricing": "Preise",
+        "contact": "Kontakt",
+        "free trial": "Gratis Test"
+    },
+    "Hero": {
+        "title": "Erleben Sie Fernsehen wie nie zuvor!",
+        "description": "Erleben Sie unbegrenzte Unterhaltung mit unserem IPTV-Service. Streamen Sie Live-TV, Filme und Shows aus aller Welt in 4K-Qualität auf jedem Gerät, jederzeit und überall.",
+        "reviews": "Ausgezeichnete Bewertungen",
+        "oneYear": "Ein Jahr nur für 49€",
+        "how": "Wie funktioniert es?"
+    },
+    "Features": {
+        "title": "Warum iptvstate wählen",
+        "description": "Genießen Sie den besten IPTV-Service zu erschwinglichen Preisen! Melden Sie sich jetzt an und erhalten Sie Zugang zu über 100.000+ weltweiten Live-TV-Kanälen und VODs, die auf all Ihren Lieblingsgeräten funktionieren.",
+        "getStarted": "Beginnen Sie noch heute",
+        "first": {
+            "title": "Server-Betriebszeit",
+            "description": "Verabschieden Sie sich von Einfrieren und Pufferproblemen! Unser IPTV-Service ist mit modernster Anti-Freeze-Technologie ausgestattet."
+        },
+        "second": {
+            "title": "Wöchentliche Updates",
+            "description": "Wir aktualisieren unsere Bibliothek täglich mit den neuesten Filmen und TV-Shows, um sicherzustellen, dass Sie immer Zugang zu aktuellen Inhalten haben."
+        },
+        "third": {
+            "title": "Geld-zurück-Garantie",
+            "description": "Sie haben nichts zu verlieren und alles zu gewinnen mit unserem intuitiven IPTV-Service und einer 30-tägigen Geld-zurück-Garantie. Für den schnellsten und ausgeklügeltsten IPTV-Anbieter."
+        },
+        "four": {
+            "title": "Gerätekompatibilität",
+            "description": "Streamen Sie auf jedem Gerät, einschließlich Smart-TVs, Firestick, Android-Boxen und Handys."
+        }
+    },
+    "Pricing": {
+        "one": "24h/7 Kostenloser Support",
+        "two": "Premium-Server",
+        "tree": "+20.500 Kanäle 24h/24",
+        "four": "+100.000 VOD 24h/24",
+        "five": "Auf jedem Gerät ansehen",
+        "sex": "Wöchentliche Updates",
+        "seven": "2024 Bester IPTV-Service",
+        "button": "Jetzt starten",
+        "first": {
+            "period": "24H",
+            "price": "Kostenlos"
+        },
+        "second": {
+            "period": "1 Jahr",
+            "price": "49.99",
+            "extra": "+ 3 Monate kostenlos"
+        },
+        "third": {
+            "period": "6 Monate",
+            "price": "29.99"
+        }
     }
-  }
+}
