@@ -59,7 +59,7 @@ export default function Features() {
 
                                 <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
 
-                                    {t('first.description')}
+                                    {t('second.description')}
                                 </p>
                             </a>
                         </div>
@@ -78,7 +78,7 @@ export default function Features() {
                                 <h2 className="mt-2 font-bold">{t('first.title')}</h2>
 
                                 <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                                    {t('first.description')}
+                                    {t('third.description')}
                                 </p>
                             </a>
                         </div>
@@ -97,7 +97,7 @@ export default function Features() {
                                 <h2 className="mt-2 font-bold">{t('four.title')}</h2>
 
                                 <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                                    {t('first.description')}
+                                    {t('four.description')}
                                 </p>
                             </a>
                         </div>

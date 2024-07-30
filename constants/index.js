@@ -1,10 +1,10 @@
 // NAVIGATION
 export const getNavLinks = (t) => [
   { href: '/', key: 'home', label: t('home') },
-  { href: '/', key: 'about', label: t('about') },
-  { href: '/', key: 'services', label: t('services') },
-  { href: '/', key: 'pricing', label: t('pricing') },
-  { href: '/', key: 'contact_us', label: t('contact') },
+  { href: `/${t('about')}`, key: 'about', label: t('about') },
+  { href: `/${t('services')}`, key: 'services', label: t('services') },
+  { href: `/${t('pricing')}`, key: 'pricing', label: t('pricing') },
+  { href: `/${t('contact')}`, key: 'contact_us', label: t('contact') },
 ];
   
   // CAMP SECTION

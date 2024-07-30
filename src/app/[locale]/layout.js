@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "iptvstate",
@@ -22,6 +23,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           <main className="app main-content relative ">
             <Navbar />
             {children}
+            <Footer />
             <Analytics />
           </main>
         </NextIntlClientProvider>
