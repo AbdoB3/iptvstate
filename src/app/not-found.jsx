@@ -1,7 +1,7 @@
 'use client';
 
 import Error from 'next/error';
-import Navbar from "@/components/NavBar";
+import Link from "next/link"
 import "./[locale]/globals.css";
 
 
@@ -13,7 +13,7 @@ export default function NotFound() {
                     <div className="gradient" />
                 </div>
                 <main >
-                    {/* <Navbar /> */}
+                    {/* <Navbar />  */}
                     <Error statusCode={404} />
                 </main>
             </body>

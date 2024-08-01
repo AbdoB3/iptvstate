@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl';
 
 
 export default function Stats() {
-    const t = useTranslations('Stats');
-
+  const t = useTranslations('Stats');
+  
   const sectionRef = useRef(null);
   const statsRef = useRef([]);
   const isVisible = useRef(false);
@@ -59,7 +59,7 @@ export default function Stats() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">{t('title')}</h2>
           <p className="mt-4 text-gray-500 sm:text-xl">
-          {t('description')}
+            {t('description')}
           </p>
         </div>
         <div className="mt-8 sm:mt-12">

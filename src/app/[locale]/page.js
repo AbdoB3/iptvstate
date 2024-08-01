@@ -4,7 +4,7 @@ import Films from '../../../components/Films';
 import Pricing from "@/components/Pricing";
 import Features from "@/components/Features";
 import CtaBanner from '@/components/CtaBanner'
-import FAQ from "@/components/FAQ";
+import Faq from "@/components/FAQ";
 import Stats from "@/components/stats";
 import HowItWorks from "@/components/Steps";
 
@@ -20,8 +20,7 @@ export default function Home() {
    <HowItWorks/>
    <CtaBanner/>
    <Stats/>
-
-   <FAQ/>
+   <Faq/>
    </>
 
   );
