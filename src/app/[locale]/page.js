@@ -17,8 +17,8 @@ export default function Home() {
    <Features/>
    <Pricing/> 
    <Films/>
-   <CtaBanner/>
    <HowItWorks/>
+   <CtaBanner/>
    <Stats/>
 
    <FAQ/>

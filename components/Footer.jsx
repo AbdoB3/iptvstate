@@ -1,7 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslations } from 'next-intl';
+
 
 export default function Footer() {
+const t = useTranslations('');
+
     return (
         <footer className="bg-gray-100 ">
             <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
@@ -12,21 +16,20 @@ export default function Footer() {
                 </div>
 
                 <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-                    itaque neque.
+                {t('Footer.description')}
                 </p>
 
                 <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                     <li>
-                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
+                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.about')} </a>
                     </li>
 
                     <li>
-                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Services </a>
+                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.services')} </a>
                     </li>
 
                     <li>
-                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Pricing </a>
+                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.pricing')} </a>
                     </li>
 
                     <li>
@@ -107,7 +110,7 @@ export default function Footer() {
             </div>
             <div className=" border-t border-gray-300 py-4 ">
                 <p className="text-center text-gray-500">
-                    © iptvstate 2020. All rights reserved.
+                    © iptvstate 2020. {t('Footer.rights')}
                 </p>
             </div>
         </footer>

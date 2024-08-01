@@ -1,7 +1,11 @@
 'use client'
 import { useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
+
 
 export default function Stats() {
+    const t = useTranslations('Stats');
+
   const sectionRef = useRef(null);
   const statsRef = useRef([]);
   const isVisible = useRef(false);
@@ -53,23 +57,23 @@ export default function Stats() {
     <section ref={sectionRef} className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Trusted by IPTV Enthusiasts</h2>
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">{t('title')}</h2>
           <p className="mt-4 text-gray-500 sm:text-xl">
-          Providing seamless streaming experiences with a vast array of channels and on-demand content.
+          {t('description')}
           </p>
         </div>
         <div className="mt-8 sm:mt-12">
           <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
-              <dt className="order-last text-lg font-medium text-gray-500">Clients</dt>
+              <dt className="order-last text-lg font-medium text-gray-500">{t('one')}</dt>
               <dd ref={(el) => statsRef.current[0] = el} data-target="2900" className="text-4xl font-extrabold text-[#EF4D48] md:text-5xl">0+</dd>
             </div>
             <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
-              <dt className="order-last text-lg font-medium text-gray-500">Channels</dt>
+              <dt className="order-last text-lg font-medium text-gray-500">{t('two')}</dt>
               <dd ref={(el) => statsRef.current[1] = el} data-target="20500" className="text-4xl font-extrabold text-[#EF4D48] md:text-5xl">0+</dd>
             </div>
             <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
-              <dt className="order-last text-lg font-medium text-gray-500">Films & Series</dt>
+              <dt className="order-last text-lg font-medium text-gray-500">{t('tree')}</dt>
               <dd ref={(el) => statsRef.current[2] = el} data-target="100000" className="text-4xl font-extrabold text-[#EF4D48] md:text-5xl">0+</dd>
             </div>
           </dl>

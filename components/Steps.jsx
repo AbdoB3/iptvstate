@@ -1,11 +1,13 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function HowItWorks() {
+    const t = useTranslations('Steps');
     return (
-        <section id="works" className="relative bg-transparent py-10 sm:py-16 lg:py-24">
+        <section id="works" className="relative py-10 sm:py-16 lg:py-24">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center">
-                    <h2 className="text-4xl text-black font-extrabold mx-auto md:text-5xl lg:text-4xl">3 easy steps to get our IPTV</h2>
+                    <h2 className="text-4xl text-black font-extrabold mx-auto md:text-5xl lg:text-4xl">{t('title')}</h2>
                 </div>
                 <div className="relative mt-12 lg:mt-20">
                     <div className="absolute inset-x-0 hidden xl:px-44 top-2 md:block md:px-20 lg:px-28">
@@ -25,28 +27,28 @@ export default function HowItWorks() {
                             <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
                                 <span className="text-xl font-semibold text-gray-700">1</span>
                             </div>
-                            <h3 className="mt-6 text-xl text-black font-semibold leading-tight md:mt-10">Select Plan</h3>
+                            <h3 className="mt-6 text-xl text-black font-semibold leading-tight md:mt-10">{t('first.title')}</h3>
                             <p className="mt-4 text-base text-gray-400 md:text-lg">
-                                Place your order by selecting your preferred subscription plan.
+                            {t('first.description')}
                             </p>
                         </div>
                         <div>
                             <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
                                 <span className="text-xl font-semibold text-gray-700">2</span>
                             </div>
-                            <h3 className="mt-6 text-xl text-black font-semibold leading-tight md:mt-10">Get your line</h3>
+                            <h3 className="mt-6 text-xl text-black font-semibold leading-tight md:mt-10">{t('second.title')}</h3>
                             <p className="mt-4 text-base text-gray-400 md:text-lg">
-                                This process may take 1 to 2 working hours.
+                            {t('second.description')}
                             </p>
                         </div>
                         <div>
                             <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
                                 <span className="text-xl font-semibold text-gray-700">3</span>
                             </div>
-                            <h3 className="mt-6 text-xl text-black font-semibold leading-tight md:mt-10">Start Streaming
+                            <h3 className="mt-6 text-xl text-black font-semibold leading-tight md:mt-10">{t('third.title')}
                             </h3>
                             <p className="mt-4 text-base text-gray-400 md:text-lg">
-                                Enjoy all channels, movies and series now!
+                            {t('third.description')}
                             </p>
                         </div>
                     </div>

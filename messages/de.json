@@ -57,5 +57,41 @@
             "period": "6 Monate",
             "price": "29.99"
         }
+    },
+    "Steps": {
+    "title":"3 einfache Schritte, um unser IPTV zu erhalten",
+        "first": {
+            "title": "Plan auswählen",
+            "description": "Platzieren Sie Ihre Bestellung, indem Sie Ihren bevorzugten Abonnementplan auswählen."
+        },
+        "second": {
+            "title": "Erhalten Sie Ihre Leitung",
+            "description": "Dieser Vorgang kann 1 bis 2 Werktage dauern."
+        },
+        "third": {
+            "title": "Starten Sie das Streaming",
+            "description": "Genießen Sie jetzt alle Kanäle, Filme und Serien!"
+        }
+    },
+    "Cta": {
+        "title": "Finden Sie mit unserem IPTV-Service all die Unterhaltung und die größten Sportereignisse, die Sie lieben!",
+        "description": "Verabschieden Sie sich von Einfrieren und Pufferung, da unsere fortschrittlichen Lösungen ein verzögerungsfreies Seherlebnis gewährleisten.",
+        "btn1": "Loslegen",
+        "btn2": "Mehr erfahren"
+    },
+    "Stats": {
+        "title": "Vertrauen durch IPTV-Enthusiasten",
+        "description": "Bereitstellung nahtloser Streaming-Erlebnisse mit einer Vielzahl von Kanälen und On-Demand-Inhalten.",
+        "one": "Kunden",
+        "two": "Kanäle",
+        "tree": "Filme & Serien"
+    },
+    "Faq": {
+        "title": "Häufig gestellte Fragen",
+        "description": "Alle häufig gestellten Fragen beantwortet, immer noch verwirrt? zögern Sie nicht, uns zu kontaktieren."
+    },
+    "Footer": {
+        "description": "Ihr Tor zur grenzenlosen Unterhaltung. Streamen Sie Filme, Fernsehsendungen, Sport und mehr in 4K-Qualität auf jedem Gerät.",
+        "rights": "Alle Rechte vorbehalten."
     }
 }

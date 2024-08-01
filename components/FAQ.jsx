@@ -1,9 +1,9 @@
 'use client'
 import { useRef, useState } from "react"
+import { useTranslations } from 'next-intl';
 
 
 const FaqsCard = (props) => {
-
     const answerElRef = useRef()
     const [state, setState] = useState(false)
     const [answerH, setAnswerH] = useState('0px')
@@ -73,15 +73,16 @@ export default () => {
             a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires."
         }
     ]
+    const t = useTranslations('Faq');
   
     return (
         <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
-                    Frequently Asked Questions
+                {t('title')}
                 </h1>
                 <p className="text-gray-600 max-w-lg mx-auto text-lg">
-                    Answered all frequently asked questions, Still confused? feel free to contact us.
+                {t('description')} 
                 </p>
             </div>
             <div className="mt-14 max-w-2xl mx-auto">

@@ -1,63 +1,97 @@
 {
-    "Navbar": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "pricing": "Pricing",
-      "contact": "Contcat Us",
-      "free trial": "Free trial"
-
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contact": "Contcat Us",
+    "free trial": "Free trial"
+  },
+  "Hero": {
+    "title": " Experience TV Like Never Before!",
+    "description": "Experience unlimited entertainment with our IPTV service. Stream live TV, movies, and shows from around the world in 4K quality on any device, anytime, anywhere.",
+    "reviews": "Excellent Reviews",
+    "oneYear": "One year only for 49€",
+    "how": "How it works?"
+  },
+  "Features": {
+    "title": "Why choose iptvstate",
+    "description": "Enjoy the best IPTV service at affordable prices! Sign up now & get access to over 100,000+ worldwide live TV channels + VODs that work on all your favorite devices.",
+    "getStarted": "Get Started Today",
+    "first": {
+      "title": "Server Uptime",
+      "description": "Say goodbye to freezing and buffering issues! Our IPTV service is equipped with cutting-edge Anti-Freeze Technology."
     },
-    "Hero": {
-      "title": " Experience TV Like Never Before!",
-      "description": "Experience unlimited entertainment with our IPTV service. Stream live TV, movies, and shows from around the world in 4K quality on any device, anytime, anywhere.",
-      "reviews":"Excellent Reviews",
-      "oneYear":"One year only for 49€",
-      "how":"How it works?"
-
+    "second": {
+      "title": "Weekly Updates",
+      "description": "We update our library daily with the latest movies & TV shows to ensure you always have access to up-to-date content."
     },
-    "Features": {
-      "title": "Why choose iptvstate",
-      "description":"Enjoy the best IPTV service at affordable prices! Sign up now & get access to over 100,000+ worldwide live TV channels + VODs that work on all your favorite devices.",
-      "getStarted":"Get Started Today",
-      "first":{
-        "title": "Server Uptime",
-        "description":"Say goodbye to freezing and buffering issues! Our IPTV service is equipped with cutting-edge Anti-Freeze Technology."
-      },
-      "second":{
-        "title": "Weekly Updates",
-        "description":"We update our library daily with the latest movies & TV shows to ensure you always have access to up-to-date content."
-      },
-      "third":{
-        "title": "Money Back Guarantee",
-        "description":"You have nothing to lose and everything to gain with our intuitive IPTV service and 30-day money-back guarantee. For the fastest and most sophisticated IPTV provider."
-      },
-      "four":{
-        "title": "Device Compatibility",
-        "description":"Stream on any device including Smart TVs, Firestick, TV Box, Apple TV, Android boxes and phones."
-      }
+    "third": {
+      "title": "Money Back Guarantee",
+      "description": "You have nothing to lose and everything to gain with our intuitive IPTV service and 30-day money-back guarantee. For the fastest and most sophisticated IPTV provider."
     },
-    "Pricing": {
-        "one":"24h/7 Free Support",
-        "two":"Premium Server",
-        "tree":"+20,500 Channels 24h/24",
-        "four":"+100,000 VOD 24h/24",
-        "five":"Watch On Any Device",
-        "sex":"Update Every week",
-        "seven":"2024 Best IPTV Service",
-        "button":"Get Started",
-      "first": {
-        "period":"24H",
-        "price":"Free"
-      },
-      "second": {
-        "period":"1 Year",
-        "price":"49.99",
-        "extra":"+ 3 months free"
-      },
-      "third": {
-        "period":"6 Months",
-        "price":"29.99"
-      }
+    "four": {
+      "title": "Device Compatibility",
+      "description": "Stream on any device including Smart TVs, Firestick, TV Box, Apple TV, Android boxes and phones."
     }
+  },
+  "Pricing": {
+    "one": "24h/7 Free Support",
+    "two": "Premium Server",
+    "tree": "+20,500 Channels 24h/24",
+    "four": "+100,000 VOD 24h/24",
+    "five": "Watch On Any Device",
+    "sex": "Update Every week",
+    "seven": "2024 Best IPTV Service",
+    "button": "Get Started",
+    "first": {
+      "period": "24H",
+      "price": "Free"
+    },
+    "second": {
+      "period": "1 Year",
+      "price": "49.99",
+      "extra": "+ 3 months free"
+    },
+    "third": {
+      "period": "6 Months",
+      "price": "29.99"
+    }
+  },
+  "Steps": {
+    "title":"3 easy steps to get our IPTV",
+    "first": {
+      "title": "Select Plan",
+      "description": "Place your order by selecting your preferred subscription plan."
+    },
+    "second": {
+      "title": " Get your line",
+      "description": "This process may take 1 to 2 working hours."
+    },
+    "third": {
+      "title": "Start Streaming",
+      "description": "Enjoy all channels, movies and series now!"
+    }
+  },
+  "Cta": {
+    "title": "Find all the entertainment and biggest sports events you love with our IPTV service!",
+    "description": "Say goodbye to freezing and buffering, as our advanced solutions ensure a lag-free viewing experience.",
+    "btn1": "Get started",
+    "btn2": "Learn more"
+  },
+  "Stats": {
+    "title": "Trusted by IPTV Enthusiasts",
+    "description": "Providing seamless streaming experiences with a vast array of channels and on-demand content.",
+    "one": "Clients",
+    "two": "Channels",
+    "tree": "Films & Series"
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Answered all frequently asked questions, Still confused? feel free to contact us."
+  },
+  "Footer": {
+    "description": "Your gateway to limitless entertainment. Stream movies, TV shows, sports, and more in 4K quality on any device.",
+    "rights": "All rights reserved."
   }
+}
