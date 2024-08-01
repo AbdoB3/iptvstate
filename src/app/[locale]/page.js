@@ -5,7 +5,7 @@ import Pricing from "@/components/Pricing";
 import Features from "@/components/Features";
 import CtaBanner from '@/components/CtaBanner'
 import Faq from "@/components/FAQ";
-import Stats from "@/components/stats";
+import Stats from "@/components/Stats";
 import HowItWorks from "@/components/Steps";
 
 export default function Home() {
