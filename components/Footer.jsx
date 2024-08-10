@@ -11,7 +11,7 @@ const t = useTranslations('');
             <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
                 <div className="flex justify-center">
                     <Link href="/">
-                        <Image src="/logo2.png" alt="logo" width={130} height={80} />
+                        <Image src="/logo2.png" priority={false} alt="logo" width={130} height={80} />
                     </Link>
                 </div>
 
@@ -34,18 +34,18 @@ const t = useTranslations('');
 
                     <li>
                         <a
-                            class="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                            className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                             href="https://api.whatsapp.com/send/?phone=447376949419"
                         >
-                            <span class="text-gray-700 transition group-hover:text-gray-700/75">
+                            <span className="text-gray-700 transition group-hover:text-gray-700/75">
                                 Live Chat
                             </span>
 
-                            <span class="relative flex h-2 w-2">
+                            <span className="relative flex h-2 w-2">
                                 <span
-                                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"
+                                    className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"
                                 ></span>
-                                <span class="relative inline-flex size-2 rounded-full bg-teal-500"></span>
+                                <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
                             </span>
                         </a>
                     </li>

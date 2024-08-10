@@ -2,12 +2,10 @@
 import { useRef, useState } from "react"
 import { useTranslations } from 'next-intl';
 
-
-const FaqsCard = (props) => {
+const FaqsCard = ({ faqsList }) => {
     const answerElRef = useRef()
     const [state, setState] = useState(false)
     const [answerH, setAnswerH] = useState('0px')
-    const { faqsList, idx } = props
 
     const handleOpenAnswer = () => {
         const answerElH = answerElRef.current.childNodes[0].offsetHeight
@@ -18,7 +16,6 @@ const FaqsCard = (props) => {
     return (
         <div 
             className="space-y-3 mt-5 overflow-hidden border-b"
-            key={idx}
             onClick={handleOpenAnswer}
         >
             <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
@@ -49,8 +46,7 @@ const FaqsCard = (props) => {
     )
 }
 
-export default () => {
-
+export default function Faqs() {
     const faqsList = [
         {
             q: "What are some random questions to ask?",
@@ -89,7 +85,7 @@ export default () => {
                 {
                     faqsList.map((item, idx) => (
                         <FaqsCard
-                            idx={idx}
+                            key={idx}  // Add key here
                             faqsList={item}
                         />
                     ))

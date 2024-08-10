@@ -1,11 +1,11 @@
+import heroImg from "@/public/Right-hero.webp"
 import Image from 'next/image'
 import Button from './Button'
-import heroImg from "@/public/Right-hero.jpg"
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 
 const Hero = () => {
-  const t = useTranslations('Hero');
+    const t = useTranslations('Hero');
 
     return (
         <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
@@ -23,7 +23,7 @@ const Hero = () => {
 
                 <h1 className="bold-52 lg:bold-58">{t('title')}</h1>
                 <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-                {t('description')}
+                    {t('description')}
                 </p>
 
                 <div className="my-11 flex flex-wrap gap-5">
@@ -57,19 +57,21 @@ const Hero = () => {
                         title={t('how')}
                         icon="/play.svg"
                         variant="btn_white_text"
+                        href="https://api.whatsapp.com/send/?phone=447376949419"
                     />
                 </div>
             </div>
 
-            <div className="hidden xl:flex relative flex-1 ">
-                <Image
-                    src={heroImg}
-                    alt="Hero Section image"
-                    width={1267}
-                    height={1601}
-                />
-
-
+            <div className="hidden xl:flex relative flex-1">
+            <Image
+                src={heroImg}
+                alt="Hero Section image"
+                width={500}  
+                height={200}  // Adjust to the actual display size
+                loading="eager"  // Image is loaded immediately
+                priority={true}  // High-priority image for faster loading
+                sizes="(max-width: 768px) 100vw, 50vw" // Adjust based on viewport width
+            />
             </div>
 
         </section>

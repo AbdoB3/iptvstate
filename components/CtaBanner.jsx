@@ -1,4 +1,6 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image'
+
 
 export default function Example() {
     const t = useTranslations('Cta');
@@ -41,7 +43,7 @@ export default function Example() {
               </div>
             </div>
             <div className="relative mt-16 h-90 lg:mt-8">
-              <img
+              <Image
                 alt="App screenshot"
                 src="https://res.cloudinary.com/dyzdrbivf/image/upload/v1722268938/1_ka9ecs.jpg"
                 width={1824}

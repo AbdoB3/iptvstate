@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <nav className="sticky-navbar flexBetween max-container padding-container z-30 py-5">
             <Link href="/">
-                <Image src="/logo2.png" alt="logo" width={120} height={80} />
+                <Image src="/logo2.png" loading="eager" priority={true} alt="logo" width={120} height={80} />
             </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
@@ -48,7 +48,6 @@ const Navbar = () => {
             <div className='lg:hidden flex relative'>
                 <div className='flex'>
                 <Language />
-
                     <Image
                         src="/menu.svg"
                         alt="menu"
@@ -58,7 +57,7 @@ const Navbar = () => {
                         onClick={() => setToggleDropdown(!toggleDropdown)}
                     />
 
-                    <div className={`dropdown ${toggleDropdown ? "dropdown_show" : ""}`}>
+                    <div className={`dropdown ${toggleDropdown ? "dropdown_show" : ""} flex items-center`}>
                         {NAV_LINKS.map((link) => (
                             <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
                                 onClick={() => {
@@ -72,6 +71,7 @@ const Navbar = () => {
                             type="button"
                             title={t('free trial')}
                             variant="btn_dark_green"
+                            href="https://api.whatsapp.com/send/?phone=447376949419"
 
                         />
                     </div>
