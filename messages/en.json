@@ -59,7 +59,7 @@
     }
   },
   "Steps": {
-    "title":"3 easy steps to get our IPTV",
+    "title": "3 easy steps to get our IPTV",
     "first": {
       "title": "Select Plan",
       "description": "Place your order by selecting your preferred subscription plan."
@@ -88,7 +88,29 @@
   },
   "Faq": {
     "title": "Frequently Asked Questions",
-    "description": "Answered all frequently asked questions, Still confused? feel free to contact us."
+    "description": "Answered all frequently asked questions, Still confused? feel free to contact us.",
+    "content": {
+      "first": {
+        "title": "How will I receive my subscription?",
+        "desc": "Once you have made the payment, you will receive an email with your login details within 1 to 3 working hours."
+      },
+      "second": {
+        "title": "Can I use my IPTV subscription on multiple devices?",
+        "desc": "Yes, you can use your subscription on multiple devices."
+      },
+      "third": {
+        "title": "Will my subscription be automatically renewed?",
+        "desc": "We will contact you via email to renew your subscription once it expires."
+      },
+      "fourth": {
+        "title": "Can I use the IPTV service while traveling?",
+        "desc": "Yes, our IPTV service is accessible worldwide. You can enjoy your favorite channels and content wherever you are."
+      },
+      "fifth": {
+        "title": "Can I request a specific channel or content?",
+        "desc": "For requests, please contact our customer support."
+      }
+    }
   },
   "Footer": {
     "description": "Your gateway to limitless entertainment. Stream movies, TV shows, sports, and more in 4K quality on any device.",

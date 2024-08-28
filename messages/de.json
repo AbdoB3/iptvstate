@@ -88,7 +88,30 @@
     },
     "Faq": {
         "title": "Häufig gestellte Fragen",
-        "description": "Alle häufig gestellten Fragen beantwortet, immer noch verwirrt? zögern Sie nicht, uns zu kontaktieren."
+        "description": "Alle häufig gestellten Fragen beantwortet, immer noch verwirrt? zögern Sie nicht, uns zu kontaktieren.",
+        "content":{
+            
+      "first":{
+        "title":"Wie werde ich mein Abonnement erhalten?",
+        "desc":"Sobald Sie die Zahlung geleistet haben, erhalten Sie innerhalb von 1 bis 3 Arbeitsstunden eine E-Mail mit Ihren Anmeldedaten."
+      },
+      "second":{
+        "title":"Kann ich mein IPTV-Abonnement auf mehreren Geräten nutzen?",
+        "desc":"Ja, Sie können Ihr Abonnement auf mehreren Geräten nutzen."
+      },
+      "third":{
+        "title":"Wird mein Abonnement automatisch verlängert?",
+        "desc":"Wir werden Sie per E-Mail kontaktieren, um Ihr Abonnement zu erneuern, sobald es abläuft."
+      },
+      "fourth":{
+        "title":"Kann ich den IPTV-Dienst auch auf Reisen nutzen?",
+        "desc":"Ja, unser IPTV-Service ist weltweit zugänglich. Sie können Ihre Lieblingssender und -inhalte genießen, wo immer Sie sich befinden."
+      },
+      "fifth":{
+        "title":"Kann ich einen bestimmten Kanal oder Inhalt anfordern?",
+        "desc":"Wenden Sie sich für Anfragen an unseren Kundensupport."
+      }
+    }
     },
     "Footer": {
         "description": "Ihr Tor zur grenzenlosen Unterhaltung. Streamen Sie Filme, Fernsehsendungen, Sport und mehr in 4K-Qualität auf jedem Gerät.",
