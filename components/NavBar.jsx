@@ -2,13 +2,13 @@
 
 import { getNavLinks } from "@/constants"
 import Image from "next/image"
-import Link from "next/link"
+// import Link from "next/link"
+import { Link } from "@/src/navigation"
 import Button from "./Button"
 import { useState } from "react"
 import Hour from "@/public/24-hours.svg"
 import { useTranslations } from 'next-intl';
 import Language from "@/components/Language";
-
 
 
 const Navbar = () => {

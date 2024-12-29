@@ -1,13 +1,9 @@
 import React from 'react'
 
 export default function page() {
-  return (
-    <html>
-        <body>
+  return (        
             <div>
                 hellop
             </div>
-        </body>
-    </html>
   )
 }
