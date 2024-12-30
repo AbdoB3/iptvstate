@@ -22,7 +22,7 @@ export default async function RootLayout({ children, params: { locale } }) {
             <div className="gradient" />
           </div>
           <main className="app main-content relative ">
-            <Navbar />
+            <Navbar locale={locale}/>
             {children}
             <Footer />
             <Analytics />

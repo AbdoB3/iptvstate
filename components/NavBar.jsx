@@ -11,7 +11,7 @@ import { useTranslations } from 'next-intl';
 import Language from "@/components/Language";
 
 
-const Navbar = () => {
+const Navbar = ({ locale }) => {
 
     const [toggleDropdown, setToggleDropdown] = useState(false);
     const t = useTranslations('Navbar');
