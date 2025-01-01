@@ -1,6 +1,6 @@
 import React from 'react'
 import { getMessages } from 'next-intl/server';
-import Pricing from '@/components/Pricing';
+import Pricing from '@/components/home/Pricing';
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });

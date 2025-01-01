@@ -8,8 +8,8 @@ import Button from "./Button"
 import { useState } from "react"
 import Hour from "@/public/24-hours.svg"
 import { useTranslations } from 'next-intl';
-import Language from "@/components/Language";
-
+import Language from "@/components/home/Language";
+import Btn from "@/components/ui/interactive-hover-button";
 
 const Navbar = ({ locale }) => {
 
@@ -36,14 +36,19 @@ const Navbar = ({ locale }) => {
 
             <div className="lg:flexCenter hidden">
 
-                <Button
+                <Btn 
+                text={ t('free trial')}
+                icon={Hour}
+                href="https://api.whatsapp.com/send/?phone=447376949419"
+                />
+                {/* <Button
                     type="button"
                     title={t('free trial')}
                     variant="btn_dark_green"
                     icon={Hour}
                     href="https://api.whatsapp.com/send/?phone=447376949419"
 
-                />
+                /> */}
             </div>
             <div className='lg:hidden flex relative'>
                 <div className='flex'>

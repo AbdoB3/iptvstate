@@ -1,9 +1,9 @@
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/home/NavBar";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import Footer from "@/components/Footer";
+import Footer from "@/components/home/Footer";
 
 
 export const metadata = {
