@@ -37,6 +37,8 @@
     }
   },
   "Pricing": {
+    "title": "Choose your plan",
+    "desc": "Not sure? try our 24h free trial",
     "one": "24h/7 Free Support",
     "two": "Premium Server",
     "tree": "+20,500 Channels 24h/24",
@@ -116,5 +118,29 @@
   "Footer": {
     "description": "Your gateway to limitless entertainment. Stream movies, TV shows, sports, and more in 4K quality on any device.",
     "rights": "All rights reserved."
+  },
+  "Feedbacks": {
+    "title": "What our customers say",
+    "description": "We are proud to have helped thousands of customers with our IPTV service. Here's what some of them have to say about us.",
+    "reviews": {
+      "first": {
+        "body": "A fantastic experience! The quality and variety are simply unbeatable. Highly recommended."
+      },
+      "second": {
+        "body": "I'm impressed with the speed and service. Everything runs smoothly. Just amazing!"
+      },
+      "third": {
+        "body": "Great selection of channels and movies. Perfect for a cozy evening at home."
+      },
+      "fourth": {
+        "body": "I never thought streaming could be this convenient. Absolutely recommend it!"
+      },
+      "fifth": {
+        "body": "Everything works perfectly. No delays or interruptions. Just what I was looking for."
+      },
+      "sixth": {
+        "body": "Excellent service and amazing quality. Finally, I can enjoy everything in top resolution!"
+      }
+    }
   }
 }

@@ -6,7 +6,9 @@ import Features from "@/components/home/Features";
 import CtaBanner from '@/components/home/CtaBanner'
 import Faq from "@/components/home/FAQ";
 import Stats from "@/components/home/Stats";
-import HowItWorks from "@/components/home/Steps";
+// import HowItWorks from "@/components/home/Steps";
+import Feedback from '@/components/home/Feedbacks';
+
 
 export default function Home() {
 
@@ -17,7 +19,7 @@ export default function Home() {
    <Features/>
    <Pricing/> 
    <Films/>
-   <HowItWorks/>
+   <Feedback/>
    <CtaBanner/>
    <Stats/>
    <Faq/>
