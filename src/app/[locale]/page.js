@@ -8,6 +8,7 @@ import Faq from "@/components/home/FAQ";
 import Stats from "@/components/home/Stats";
 // import HowItWorks from "@/components/home/Steps";
 import Feedback from '@/components/home/Feedbacks';
+import PricingT from '@/components/pricing/PricingT';
 
 
 export default function Home() {
@@ -17,7 +18,8 @@ export default function Home() {
    <Hero/>
    <ChannelLogos/>
    <Features/>
-   <Pricing/> 
+   {/* <Pricing/>  */}
+    <PricingT/>
    <Films/>
    <Feedback/>
    <CtaBanner/>

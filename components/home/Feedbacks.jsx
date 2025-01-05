@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 import WordPullUp from "../ui/word-pull-up";
 import { useTranslations } from 'next-intl';
+import Image from "next/image";
 
 
 export default function Feedback() {
@@ -82,7 +83,7 @@ export default function Feedback() {
   };
 
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden mt-5 rounded-lg bg-background">
       <WordPullUp
         className="text-3xl lg:text-5xl sm:text-4xl mx-4 font-bold mt-1"
       >
@@ -91,6 +92,13 @@ export default function Feedback() {
       <p className="text-muted-foreground mx-10 lg:mx-4 mt-2 mb-4">
         {t('description')}
       </p>
+
+      <Image
+        src="/reviews.png"
+        width={250}
+        height={250}
+        className="mb-4"
+      />
 
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (

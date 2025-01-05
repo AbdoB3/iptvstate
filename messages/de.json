@@ -37,29 +37,32 @@
         }
     },
     "Pricing": {
+        "months": "Monate",
+        "month": "Monat",
         "title": "Wählen Sie Ihren Plan",
         "desc": "Nicht sicher? Probieren Sie unseren 24-Stunden-Kostenlos-Test aus.",
         "one": "24h/7 Kostenloser Support",
         "two": "Premium-Server",
-        "tree": "+20.500 Kanäle 24h/24",
+        "three": "+20.500 Kanäle 24h/24",
         "four": "+100.000 VOD 24h/24",
         "five": "Auf jedem Gerät ansehen",
-        "sex": "Wöchentliche Updates",
+        "six": "Wöchentliche Updates",
         "seven": "2024 Bester IPTV-Service",
         "button": "Jetzt starten",
-        "first": {
-            "period": "24H",
-            "price": "Kostenlos"
+        "popular": "🔥 Am beliebtesten",
+        "devices": {
+            "single": "Einzelgerät",
+            "multiple": "Mehrere Geräte",
+            "two": "2 Geräte",
+            "three": "3 Geräte",
+            "four": "4 Geräte"
         },
-        "second": {
-            "period": "1 Jahr",
-            "price": "49.99",
-            "extra": "+ 3 Monate kostenlos"
+        "bonus": {
+            "one": "+ 1 Monat kostenlos",
+            "two": "+ 3 Monate kostenlos",
+            "three": "+ 6 Monate kostenlos"
         },
-        "third": {
-            "period": "6 Monate",
-            "price": "29.99"
-        }
+        "guarantee": "7-tägige Geld-zurück-Garantie"
     },
     "Steps": {
         "title": "3 einfache Schritte, um unser IPTV zu erhalten",

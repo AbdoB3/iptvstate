@@ -16,13 +16,13 @@ export default function Pricing() {
 
                 <WordPullUp className="text-4xl md:text-5xl font-bold">{t('title')}</WordPullUp>
                 <WordPullUp className="text-muted-foreground mt-2">{t('desc')}</WordPullUp>
-                
+
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:items-center md:gap-8">
                 {PLANS.map((plan, index) => (
                     <div
                         key={index}
-                        className={`rounded-2xl border ${plan.period === "1 Year"
+                        className={`rounded-2xl border ${plan.period === "1 Year" || plan.period == "1 Jahr"
                             ? 'border-[#EF4D48] p-6 shadow-sm ring-1 ring-[#EF4D48] sm:px-8 lg:p-12'
                             : 'border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12'
                             }`}
