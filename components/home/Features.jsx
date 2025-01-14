@@ -1,4 +1,6 @@
 import { useTranslations } from 'next-intl';
+import { BorderBeam } from '../ui/border-beam';
+
 
 export default function Features() {
 
@@ -27,8 +29,16 @@ export default function Features() {
 
                         <div className='sm:mt-6'>
                             <div
-                                className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                                className="block relative rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                             >
+                                <div className="hidden md:block rounded-xl">
+                                    <BorderBeam
+                                        size={44}
+                                        borderWidth={1.5}
+                                        colorFrom="#EF4D48"
+                                        colorTo="#EF4D48"
+                                    />
+                                </div>
                                 <span className="inline-block rounded-lg bg-[#f8f8f8] p-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -42,12 +52,14 @@ export default function Features() {
                                     {t('first.description')}
                                 </p>
                             </div>
+
                         </div>
 
                         <div>
                             <div
-                                className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                                className="block rounded-xl relative border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                             >
+
                                 <span className="inline-block rounded-lg bg-[#f8f8f8] p-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
@@ -61,10 +73,19 @@ export default function Features() {
 
                                     {t('second.description')}
                                 </p>
+                                <div className="hidden md:block rounded-xl">
+                                    <BorderBeam
+                                        size={44}
+                                        borderWidth={1.5}
+                                        colorFrom="#EF4D48"
+                                        colorTo="#EF4D48"
+                                    />
+                                </div>
                             </div>
+
                         </div>
 
-                        <div className='sm:mt-6'>
+                        <div className='sm:mt-6  relative rounded-xl'>
                             <div
                                 className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                             >
@@ -81,12 +102,29 @@ export default function Features() {
                                     {t('third.description')}
                                 </p>
                             </div>
+                            <div className="hidden md:block rounded-xl">
+                                <BorderBeam
+                                    size={44}
+                                    borderWidth={1.5}
+                                    colorFrom="#EF4D48"
+                                    colorTo="#EF4D48"
+                                />
+                            </div>
+
                         </div>
 
                         <div >
                             <div
-                                className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                                className="block relative rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                             >
+                                <div className="hidden md:block rounded-xl">
+                                    <BorderBeam
+                                        size={44}
+                                        borderWidth={1.5}
+                                        colorFrom="#EF4D48"
+                                        colorTo="#EF4D48"
+                                    />
+                                </div>
                                 <span className="inline-block rounded-lg bg-[#f8f8f8] p-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />

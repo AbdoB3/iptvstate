@@ -5,7 +5,8 @@
         "services": "Dienstleistungen",
         "pricing": "Preise",
         "contact": "Kontakt",
-        "free trial": "Gratis Test"
+        "free trial": "Gratis Test",
+        "pricing_page": "Preisgestaltung hhhPage"
     },
     "Hero": {
         "title": "Erleben Sie Fernsehen wie nie zuvor!",
@@ -36,30 +37,35 @@
         }
     },
     "Pricing": {
+        "months": "Monate",
+        "month": "Monat",
+        "title": "Wählen Sie Ihren Plan",
+        "desc": "Nicht sicher? Probieren Sie unseren 24-Stunden-Kostenlos-Test aus.",
         "one": "24h/7 Kostenloser Support",
         "two": "Premium-Server",
-        "tree": "+20.500 Kanäle 24h/24",
+        "three": "+20.500 Kanäle 24h/24",
         "four": "+100.000 VOD 24h/24",
         "five": "Auf jedem Gerät ansehen",
-        "sex": "Wöchentliche Updates",
+        "six": "Wöchentliche Updates",
         "seven": "2024 Bester IPTV-Service",
         "button": "Jetzt starten",
-        "first": {
-            "period": "24H",
-            "price": "Kostenlos"
+        "popular": "🔥 Am beliebtesten",
+        "devices": {
+            "single": "Einzelgerät",
+            "multiple": "Mehrere Geräte",
+            "two": "2 Geräte",
+            "three": "3 Geräte",
+            "four": "4 Geräte"
         },
-        "second": {
-            "period": "1 Jahr",
-            "price": "49.99",
-            "extra": "+ 3 Monate kostenlos"
+        "bonus": {
+            "one": "+ 1 Monat kostenlos",
+            "two": "+ 3 Monate kostenlos",
+            "three": "+ 6 Monate kostenlos"
         },
-        "third": {
-            "period": "6 Monate",
-            "price": "29.99"
-        }
+        "guarantee": "7-tägige Geld-zurück-Garantie"
     },
     "Steps": {
-    "title":"3 einfache Schritte, um unser IPTV zu erhalten",
+        "title": "3 einfache Schritte, um unser IPTV zu erhalten",
         "first": {
             "title": "Plan auswählen",
             "description": "Platzieren Sie Ihre Bestellung, indem Sie Ihren bevorzugten Abonnementplan auswählen."
@@ -89,32 +95,55 @@
     "Faq": {
         "title": "Häufig gestellte Fragen",
         "description": "Alle häufig gestellten Fragen beantwortet, immer noch verwirrt? zögern Sie nicht, uns zu kontaktieren.",
-        "content":{
-            
-      "first":{
-        "title":"Wie werde ich mein Abonnement erhalten?",
-        "desc":"Sobald Sie die Zahlung geleistet haben, erhalten Sie innerhalb von 1 bis 3 Arbeitsstunden eine E-Mail mit Ihren Anmeldedaten."
-      },
-      "second":{
-        "title":"Kann ich mein IPTV-Abonnement auf mehreren Geräten nutzen?",
-        "desc":"Ja, Sie können Ihr Abonnement auf mehreren Geräten nutzen."
-      },
-      "third":{
-        "title":"Wird mein Abonnement automatisch verlängert?",
-        "desc":"Wir werden Sie per E-Mail kontaktieren, um Ihr Abonnement zu erneuern, sobald es abläuft."
-      },
-      "fourth":{
-        "title":"Kann ich den IPTV-Dienst auch auf Reisen nutzen?",
-        "desc":"Ja, unser IPTV-Service ist weltweit zugänglich. Sie können Ihre Lieblingssender und -inhalte genießen, wo immer Sie sich befinden."
-      },
-      "fifth":{
-        "title":"Kann ich einen bestimmten Kanal oder Inhalt anfordern?",
-        "desc":"Wenden Sie sich für Anfragen an unseren Kundensupport."
-      }
-    }
+        "content": {
+            "first": {
+                "title": "Wie werde ich mein Abonnement erhalten?",
+                "desc": "Sobald Sie die Zahlung geleistet haben, erhalten Sie innerhalb von 1 bis 3 Arbeitsstunden eine E-Mail mit Ihren Anmeldedaten."
+            },
+            "second": {
+                "title": "Kann ich mein IPTV-Abonnement auf mehreren Geräten nutzen?",
+                "desc": "Ja, Sie können Ihr Abonnement auf mehreren Geräten nutzen."
+            },
+            "third": {
+                "title": "Wird mein Abonnement automatisch verlängert?",
+                "desc": "Wir werden Sie per E-Mail kontaktieren, um Ihr Abonnement zu erneuern, sobald es abläuft."
+            },
+            "fourth": {
+                "title": "Kann ich den IPTV-Dienst auch auf Reisen nutzen?",
+                "desc": "Ja, unser IPTV-Service ist weltweit zugänglich. Sie können Ihre Lieblingssender und -inhalte genießen, wo immer Sie sich befinden."
+            },
+            "fifth": {
+                "title": "Kann ich einen bestimmten Kanal oder Inhalt anfordern?",
+                "desc": "Wenden Sie sich für Anfragen an unseren Kundensupport."
+            }
+        }
     },
     "Footer": {
         "description": "Ihr Tor zur grenzenlosen Unterhaltung. Streamen Sie Filme, Fernsehsendungen, Sport und mehr in 4K-Qualität auf jedem Gerät.",
         "rights": "Alle Rechte vorbehalten."
+    },
+    "Feedbacks": {
+        "title": "Was unsere Kunden sagen",
+        "description": "Wir sind stolz darauf, Tausenden von Kunden mit unserem IPTV-Service geholfen zu haben. Hier ist, was einige von ihnen über uns sagen.",
+        "reviews": {
+            "first": {
+                "body": "Eine fantastische Erfahrung! Die Qualität und Vielfalt sind einfach unschlagbar. Sehr zu empfehlen."
+            },
+            "second": {
+                "body": "Ich bin beeindruckt von der Geschwindigkeit und dem Service. Alles läuft reibungslos. Einfach großartig!"
+            },
+            "third": {
+                "body": "Großartige Auswahl an Kanälen und Filmen. Perfekt für einen gemütlichen Abend zu Hause."
+            },
+            "fourth": {
+                "body": "Ich hätte nie gedacht, dass Streaming so bequem sein könnte. Absolut empfehlenswert!"
+            },
+            "fifth": {
+                "body": "Alles funktioniert perfekt. Keine Verzögerungen oder Unterbrechungen. Genau das, wonach ich gesucht habe."
+            },
+            "sixth": {
+                "body": "Exzellenter Service und erstaunliche Qualität. Endlich kann ich alles in bester Auflösung genießen!"
+            }
+        }
     }
 }

@@ -1,15 +1,16 @@
 'use client'
 import { useState, useTransition, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import { useLocale } from "use-intl";
+import { useRouter, usePathname } from "next/navigation";
 import { countries } from "@/constants";
+import { useLocale } from "use-intl";
 import Image from 'next/image'
 
 export default function FilterDemo() {
-    const [selectedCountry, setSelectedCountry] = useState(countries[1]); // Default to "DE"
+    const [selectedCountry, setSelectedCountry] = useState(countries[1]); // Default to "EN"
     const [isPending, startTransition] = useTransition();
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
+    const pathname = usePathname();
     const localActive = useLocale();
 
     useEffect(() => {
@@ -22,7 +23,8 @@ export default function FilterDemo() {
         const nextLocale = country.code;
 
         startTransition(() => {
-            router.replace(`/${nextLocale}`);
+            const path = pathname.split("/").slice(2).join("/");
+            router.replace(`/${nextLocale}/${path}`);
         });
         setIsOpen(false);
     };

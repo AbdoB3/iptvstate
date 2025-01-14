@@ -5,7 +5,8 @@
     "services": "Services",
     "pricing": "Pricing",
     "contact": "Contcat Us",
-    "free trial": "Free trial"
+    "free trial": "Free trial",
+    "pricing_page": "Pricing Page"
   },
   "Hero": {
     "title": " Experience TV Like Never Before!",
@@ -36,27 +37,32 @@
     }
   },
   "Pricing": {
+    "months": "Months",
+    "month": "Month",
+    "title": "Choose your plan",
+    "desc": "Not sure? try our 24h free trial",
     "one": "24h/7 Free Support",
     "two": "Premium Server",
-    "tree": "+20,500 Channels 24h/24",
+    "three": "+20,500 Channels 24h/24",
     "four": "+100,000 VOD 24h/24",
     "five": "Watch On Any Device",
-    "sex": "Update Every week",
+    "six": "Update Every week",
     "seven": "2024 Best IPTV Service",
     "button": "Get Started",
-    "first": {
-      "period": "24H",
-      "price": "Free"
+    "popular": "🔥 Most Popular",
+    "devices": {
+      "single": "single device",
+      "multiple": "multiple devices",
+      "two": "2 Devices",
+      "three": "3 Devices",
+      "four": "4 Devices"
     },
-    "second": {
-      "period": "1 Year",
-      "price": "49.99",
-      "extra": "+ 3 months free"
+    "bonus": {
+      "one": "+ 1 month free",
+      "two": "+ 3 months free",
+      "three": "+ 6 months free"
     },
-    "third": {
-      "period": "6 Months",
-      "price": "29.99"
-    }
+    "guarantee":"7-day money-back guarantee"
   },
   "Steps": {
     "title": "3 easy steps to get our IPTV",
@@ -115,5 +121,29 @@
   "Footer": {
     "description": "Your gateway to limitless entertainment. Stream movies, TV shows, sports, and more in 4K quality on any device.",
     "rights": "All rights reserved."
+  },
+  "Feedbacks": {
+    "title": "What our customers say",
+    "description": "We are proud to have helped thousands of customers with our IPTV service. Here's what some of them have to say about us.",
+    "reviews": {
+      "first": {
+        "body": "A fantastic experience! The quality and variety are simply unbeatable. Highly recommended."
+      },
+      "second": {
+        "body": "I'm impressed with the speed and service. Everything runs smoothly. Just amazing!"
+      },
+      "third": {
+        "body": "Great selection of channels and movies. Perfect for a cozy evening at home."
+      },
+      "fourth": {
+        "body": "I never thought streaming could be this convenient. Absolutely recommend it!"
+      },
+      "fifth": {
+        "body": "Everything works perfectly. No delays or interruptions. Just what I was looking for."
+      },
+      "sixth": {
+        "body": "Excellent service and amazing quality. Finally, I can enjoy everything in top resolution!"
+      }
+    }
   }
 }

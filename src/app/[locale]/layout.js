@@ -1,9 +1,10 @@
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/home/NavBar";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import Footer from "@/components/Footer";
+import Footer from "@/components/home/Footer";
+
 
 export const metadata = {
   title: "iptvstate",
@@ -21,7 +22,7 @@ export default async function RootLayout({ children, params: { locale } }) {
             <div className="gradient" />
           </div>
           <main className="app main-content relative ">
-            <Navbar />
+            <Navbar locale={locale}/>
             {children}
             <Footer />
             <Analytics />
