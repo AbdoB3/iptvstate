@@ -21,11 +21,11 @@ const t = useTranslations('');
 
                 <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                     <li>
-                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.about')} </a>
+                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.installation')} </a>
                     </li>
 
                     <li>
-                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.services')} </a>
+                        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> {t('Navbar.resseler')} </a>
                     </li>
 
                     <li>

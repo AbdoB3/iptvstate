@@ -1,8 +1,8 @@
 {
     "Navbar": {
         "home": "Startseite",
-        "about": "Über uns",
-        "services": "Dienstleistungen",
+        "resseler": "Wiederverkäufer",
+        "installation": "Installation",
         "pricing": "Preise",
         "contact": "Kontakt",
         "free trial": "Gratis Test",
@@ -145,5 +145,11 @@
                 "body": "Exzellenter Service und erstaunliche Qualität. Endlich kann ich alles in bester Auflösung genießen!"
             }
         }
+    },
+    "installation": {
+        "title": "Dies ist die Installationsseite"
+    },
+    "resseler":{
+        "title":"Dies ist die Resseler-Seite"
     }
 }

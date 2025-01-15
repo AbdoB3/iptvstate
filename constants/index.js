@@ -2,9 +2,9 @@
 
 export const getNavLinks = (t) => [
   { href: '/', key: 'home', label: t('home') },
-  // { href: `/${t('about')}`, key: 'about', label: t('about') },
-  { href: "/services", key: 'services', label: t('services') },
+  { href: "/installation", key: 'installation', label: t('installation') },
   { href: "/pricing", key: 'pricing', label: t('pricing') },
+   { href: "resseler", key: 'resseler', label: t('resseler') },
   { href: "/contact", key: 'contact_us', label: t('contact') },
   
 ];
