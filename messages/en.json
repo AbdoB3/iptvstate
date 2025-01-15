@@ -1,8 +1,8 @@
 {
   "Navbar": {
     "home": "Home",
-    "about": "About",
-    "services": "Services",
+    "resseler": "Resseler",
+    "installation": "Installation",
     "pricing": "Pricing",
     "contact": "Contcat Us",
     "free trial": "Free trial",
@@ -145,5 +145,11 @@
         "body": "Excellent service and amazing quality. Finally, I can enjoy everything in top resolution!"
       }
     }
+  },
+  "installation":{
+    "title":"This is Installation page"
+  },
+  "resseler":{
+    "title":"This is Resseler page"
   }
 }
