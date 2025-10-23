@@ -57,7 +57,6 @@ export default function Stats() {
     <section ref={sectionRef} className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Test BIHI ABDO</h1>
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">{t('title')}</h2>
           <p className="mt-4 text-gray-500 text-muted-foreground">
             {t('description')}
